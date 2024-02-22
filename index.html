@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+    <script>
+        function formValidate(){
+            let x = document.forms["myform"]["fname"].value;
+            let y = document.forms["myform"]["flname"].value;
+            let z = document.forms["myform"]["fsalary"].value;
+    
+            if(x === ""  || y=== "" || z=== ""){
+                alert("Debes llenar todos los campos");
+                return false;
+            } else if (isNaN(z) || z <= 0) {
+                alert("El salario debe ser un número válido y mayor que cero");
+                return false;
+            } else {
+                alert("Información enviada");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+
+</header>
+
+<nav>
+
+</nav>
+
+<main>
+    <section id="form">
+        <h2 >Datos del empleado</h2>
+        <form id="costumerform" name="myform" action="form.html">
+            
+            Nombre:   <br> <input type="text" name="fname" id="fname"><br><br>
+            Apellido:   <br> <input type="text" name="flname" id="flname"><br><br>
+            Salario:    <br> <input type="number" name="fsalary" id="fsalary"><br><br>
+        </form>
+        <button id="btnenviar" onclick="formValidate()"> 
+        Enviar
+        </button>
+        
+    </section>
+    <section id="print">
+        <h2>ver datos del empleado</h2>
+        <article>
+            <p id="ver">
+                
+            </p>
+            <form id="costumerform" name="myform" action="procesar_formulario.php" method="post">
+        </article>
+    </section>
+</main>
+
+
+</body>
+</html> 

@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: papayawhip;
+    height: 70px;
+    width: 100%;
+
+}
+
+nav{
+    background-color: rgb(220, 209, 192);
+    height: 70px;
+    width: 100%;
+
+}
+
+
+
+
+main{
+    background-color: rgb(171, 169, 166);
+    height: 700px;
+    width: 100%;
+    position: absolute;
+}
+
+#form{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(195, 170, 147, 0);
+    margin-top: 50px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+#costumerform{
+    position: relative;
+    left: 550px;
+    margin-top: 30px;
+    
+
+}
+#btnenviar{
+    position: relative;
+    left: 610px;
+    padding-top:10px;
+
+
+}
+
+#print{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(255, 239, 213, 0.491);
+    margin-top: 50px;
+}
+
+footer{
+    background-color: papayawhip;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
